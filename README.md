@@ -40,3 +40,7 @@ $ python create_json.py
 ### pandas との連携
 
 [pandas との連携](notebooks/sample_02_pandas.ipynb) を参照してください。
+
+### Pydantic を使ってみる
+
+[Pydantic を使ってみる](notebooks/sample_03_pydantic.ipynb) を参照してください。
