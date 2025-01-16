@@ -1,0 +1,33 @@
+[project]
+name = "python-json"
+version = "0.1.0"
+description = "Python で json ファイルを扱う方法を紹介します。"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic>=2.10.5",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "pre-commit>=4.0.1",
+    "ruff>=0.9.1",
+]
+
+[tool.ruff]
+# Group violations by containing file.
+output-format = "grouped"
+# Allow lines to be as long as 100.
+line-length = 100
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "COM812",  # [[conflicted]]
+    "ISC001",  # [[conflicted]]
+    "D415",    # Period
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
