@@ -32,3 +32,7 @@ $ python create_json.py
     ]
 }
 ```
+
+### 基本的な使い方
+
+[json ファイルの基本的な扱い方](notebooks/sample_01_basic.ipynb) を参照してください。
